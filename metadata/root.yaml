@@ -1,0 +1,11 @@
+mycustom:
+  display_name: mycustom
+  description: mycustom
+  logo: mycustom/logo.png
+  category: other
+  overview: mycustom/overview.md
+  resources:
+    links:
+      - type: support
+        title: Support Resources
+        link: https://www.d2iq.com

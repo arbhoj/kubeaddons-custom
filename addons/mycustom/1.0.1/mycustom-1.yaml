@@ -1,0 +1,30 @@
+---
+apiVersion: kubeaddons.mesosphere.io/v1beta1
+kind: Addon
+metadata:
+  name: mycustom
+  namespace: default
+  labels:
+    kubeaddons.mesosphere.io/name: mycustom
+    # TODO: we're temporarily supporting dependency on an existing default storage class
+    # on the cluster, this hack will trigger re-queue on Addons until one exists
+    kubeaddons.mesosphere.io/hack-requires-defaultstorageclass: "true"
+  annotations:
+    catalog.kubeaddons.mesosphere.io/addon-revision: "1.0.1-1"
+    appversion.kubeaddons.mesosphere.io/mycustom: "1.0.1"
+    values.chart.helm.kubeaddons.mesosphere.io/cockroachdb: "https://raw.githubusercontent.com/helm/charts/master/stable/envoy/values.yaml"
+spec:
+  kubernetes:
+    minSupportedVersion: v1.15.0
+  cloudProvider:
+    - name: aws
+      enabled: true
+    - name: azure
+      enabled: true
+    - name: docker
+      enabled: false
+    - name: none
+      enabled: true
+  chartReference:
+    chart: stable/envoy
+    version: 1.9.0
