@@ -1,9 +1,23 @@
-mycustom:
-  display_name: mycustom
-  description: mycustom
-  logo: mycustom/logo.png
+---
+teams:
+  display_name: teams
+  description: teams
+  logo: teams/logo.png
   category: other
-  overview: mycustom/overview.md
+  overview: teams/overview.md
+  resources:
+    links:
+      - type: support
+        title: Support Resources
+        link: https://www.d2iq.com
+
+---
+envoy:
+  display_name: envoy
+  description: envoy
+  logo: envoy/logo.png
+  category: proxy
+  overview: envoy/overview.md
   resources:
     links:
       - type: support
