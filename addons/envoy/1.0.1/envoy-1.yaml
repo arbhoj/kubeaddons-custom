@@ -27,5 +27,5 @@ spec:
       enabled: true
   chartReference:
     chart: envoy
-    repo: https://mylocalrepo:8080/
+    repo: http://myhelmrepo:8080/
     version: 1.9.0
