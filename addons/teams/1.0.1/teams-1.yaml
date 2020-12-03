@@ -28,3 +28,5 @@ spec:
     chart: teams
     repo: http://myhelmrepo:8080/
     version: 0.1.0
+    values: |
+      test: dummy
