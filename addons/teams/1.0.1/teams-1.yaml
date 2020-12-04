@@ -27,6 +27,11 @@ spec:
   chartReference:
     chart: teams
     repo: http://myhelmrepo:8080/
-    version: 0.1.0
     values: |
-      test: dummy
+      teams:
+      - dev
+      - qa
+      - inttesting
+      - staging
+      - prod
+    version: 0.1.0

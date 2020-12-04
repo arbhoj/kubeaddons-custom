@@ -30,4 +30,4 @@ spec:
     repo: http://myhelmrepo:8080/
     version: 1.9.0
     values: |
-      test: dummy
+      test: this
