@@ -1,7 +1,6 @@
----
 teams:
-  display_name: teams
-  description: teams
+  display_name: Teams
+  description: Teams
   logo: teams/logo.png
   category: other
   overview: teams/overview.md
@@ -11,10 +10,9 @@ teams:
         title: Support Resources
         link: https://www.d2iq.com
 
----
 envoy:
-  display_name: envoy
-  description: envoy
+  display_name: Envoy
+  description: Envoy
   logo: envoy/logo.png
   category: proxy
   overview: envoy/overview.md
@@ -23,3 +21,27 @@ envoy:
       - type: support
         title: Support Resources
         link: https://www.d2iq.com
+
+solr:
+  display_name: Solr
+  description: Solr
+  logo: solr/logo.png
+  category: search
+  overview: solr/overview.md
+  resources:
+    links:
+      - type: support
+        title: Support Resources
+        link: https://lucene.apache.org/solr/
+
+rabbit:
+  display_name: RabbitMQ
+  description: RabbitMQ
+  logo: rabbit/logo.png
+  category: search
+  overview: rabbit/overview.md
+  resources:
+    links:
+      - type: support
+        title: Support Resources
+        link: https://www.rabbitmq.com/
