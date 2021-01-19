@@ -28,6 +28,7 @@ spec:
     chart: rabbitmq
     repo: http://myhelmrepo:8080/
     values: |
+      replicas: 2
       rabbitmq:
         ## RabbitMQ application username
         ## ref: https://github.com/bitnami/bitnami-docker-rabbitmq#environment-variables
