@@ -25,7 +25,7 @@ spec:
     - name: none
       enabled: true
   chartReference:
-    chart: rabbit
+    chart: rabbitmq
     repo: http://myhelmrepo:8080/
     values: |
       rabbitmq:

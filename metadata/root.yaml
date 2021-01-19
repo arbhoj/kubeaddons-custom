@@ -38,7 +38,7 @@ rabbit:
   display_name: RabbitMQ
   description: RabbitMQ
   logo: rabbit/logo.png
-  category: search
+  category: message broker
   overview: rabbit/overview.md
   resources:
     links:
