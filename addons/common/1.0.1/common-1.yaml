@@ -25,7 +25,7 @@ spec:
     - name: none
       enabled: true
   chartReference:
-    chart: common
+    chart: Common
     repo: http://myhelmrepo:8080/
     version: 0.1.0
     values: |
